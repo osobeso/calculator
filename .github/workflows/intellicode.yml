@@ -1,0 +1,15 @@
+name: IntelliCode Train
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  train-model:
+    
+    runs-on: windows-latest
+
+    steps:
+    - uses: osobeso/vsic-trainer@demo
+      with:
+        pat: ${{ secrets.VSIC_TOKEN }}
