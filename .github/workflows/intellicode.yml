@@ -11,6 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: osobeso/vsic-trainer@demo
+    - uses: osobeso/vs-intellicode@v1
       with:
         pat: ${{ secrets.VSIC_TOKEN }}
+        config: Release
+        platform: ARM
