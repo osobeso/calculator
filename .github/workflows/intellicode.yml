@@ -8,7 +8,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: osobeso/vs-intellicode@v1
+    - uses: microsoft/vs-intellicode@v1.0
       with:
         config: Release
         platform: ARM
