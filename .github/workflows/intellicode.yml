@@ -10,7 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: osobeso/vs-intellicode@v1
-
       with:
         config: Release
         platform: ARM
